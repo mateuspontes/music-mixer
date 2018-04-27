@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #222;
+  font-family: 'Roboto', Georgia, sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-header {
+  padding: 20px;
+}
+
+.app-title a {
+  color: #fff;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2em;
+}
+
+
+/* Artists */
+
+.artists {
+  margin: 20px 0;
+}
+.artists header {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+}
+.artists header .artist-name {
+  bottom: 0px;
+  z-index: 10;
+  background: #000;
+  padding: 3px;
+  position: absolute;
+}
+.artists header .artist-avatar {
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  width: 200px;
+  position: absolute;
+}
+
+/* Tracklist */
+.artists .albums {
+  padding: 20px;
+  border-top: 1px solid #444;
+}
+.artists .albums ul {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 160px);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.artists .albums li {
+  list-style: none;
+
+}
+.artist-album-cover {
+  width: 150px;
+}
